@@ -92,12 +92,18 @@ local mappings = {
     ["<leader>hn"] = { "<cmd>Gitsigns next_hunk<cr>", "next hunk"},
     ["<leader>ho"] = { "<cmd>Gitsigns preview_hunk<cr>", "preview hunk"},
     ["<leader>hl"] = { "<cmd>Gitsigns setloclist<cr>", "setloclist"},
+    ["<leader>hh"] = { "<cmd>Gitsigns select_hunk<cr>", "select hunk"},
     ["<leader>hf"] = { "<cmd>Gitsigns diffthis<cr>", "diffthis"},
     ["<leader>hs"] = { "<cmd>Gitsigns stage_hunk<cr>", "stage hunk"},
     ["<leader>hu"] = { "<cmd>Gitsigns undo_stage_hunk<cr>", "undo stage hunk"},
     ["<leader>hg"] = { "<cmd>Gitsigns get_hunks<cr>", "get hunks"},
-    ["<leader>hS"] = { "<cmd>Gitsigns select_hunk<cr>", "select hunk"},
     ["<leader>hr"] = { "<cmd>Gitsigns reset_hunk<cr>", "reset hunk"},
+    ["<leader>hb"] = { "<cmd>Gitsigns stage buffer<cr>", "stage buffer"},
+    ["<leader>hB"] = { "<cmd>Gitsigns reset_buffer<cr>", "reset buffer"},
+    ["<leader>hd"] = { "<cmd>Gitsigns toggle_deleted<cr>", "toggle deleted"},
+    ["<leader>hw"] = { "<cmd>Gitsigns toggle_word_diff<cr>", "toggle word diff"},
+    ["<leader>ht"] = { "<cmd>Gitsigns toggle_current_line_blame<cr>", "toggle current line blame"},
+    ["<leader>hx"] = { "<cmd>Gitsigns blame_line<cr>", "blame line"},
 }
 
 wk.register(mappings, opts)
